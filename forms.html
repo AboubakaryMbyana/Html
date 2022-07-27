@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+
+        <p>
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="number">Enter number</label>
+            <input type="number" id="number" placeholder="number" name="num">
+        </p>
+
+        <p>
+            <label for="color">Enter color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p><label for="range">Enter Range</label>
+            <input type="range" id="range" name="range">
+        </p>
+        <button type="button">Button</button>
+        <button type="button">Button wont submit</button>
+        <input type="submit" value="Click me to submit!!">
+    </form>
+
+    <h1>Hijacking search forms</h1>
+    <form action="https://www.reddit.com/search/?q">
+        <h2>Search reddit</h2>
+        <input type="text" placeholder="search" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+
+    <form action="https://www.google.com/search?q">
+        <h2>Search Google</h2>
+        <input type="text" placeholder="search" name="q">
+        <button>Search Google</button>
+    </form>
+
+
+    <form action="https://www.youtube.com/results?search_query">
+        <h2>Search Youtube</h2>
+        <input type="text" placeholder="search" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <h1>Other inputs</h1>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_terms" id="agree">
+        <label for="agree">Agreeing with the terms</label>
+
+        <p>
+            <label for="large">large</label>
+            <input type="radio" name="size" id="large" value="large">
+            <label for="medium">medium</label>
+            <input type="radio" name="size" id="medium" value="medium">
+            <label for="small">small</label>
+            <input type="radio" name="size" id="small" value="small">
+        </p>
+
+        <p>
+        <h2> Menu</h2>
+        <label for="meal">Please select menu</label>
+        <select name="meal" id="meal">
+            <option value="steak">Steak</option>
+            <option value="wali">Wali</option>
+            <option value="veg">Vegeterian</option>
+            <option value="fish">Fish</option>
+        </select>
+        </p>
+        <p>
+        <h2>Any request</h2>
+        <label for="req">Type the request</label><br>
+        <textarea name="requests" id="req" cols="40" rows="10" placeholder="Type...."></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <p>
+
+    <h1>Validation Form</h1>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" maxlength="10" minlength="4" required>
+        <button>Submit</button>
+    </form>
+    </p>
+
+</body>
+
+</html>
